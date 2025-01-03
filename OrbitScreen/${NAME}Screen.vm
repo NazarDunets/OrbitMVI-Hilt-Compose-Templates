@@ -1,0 +1,27 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+
+#end
+#parse("File Header.java")
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.hilt.navigation.compose.hiltViewModel
+import org.orbitmvi.orbit.compose.collectAsState
+import org.orbitmvi.orbit.compose.collectSideEffect
+
+@Composable
+fun ${NAME}Screen(
+    modifier: Modifier = Modifier,
+) {
+    val vm = hiltViewModel<${NAME}VM>()
+
+    vm.collectSideEffect {
+        when (it) {
+            else -> TODO()
+        }
+    }
+
+    val state by vm.collectAsState()
+
+    TODO()
+}
