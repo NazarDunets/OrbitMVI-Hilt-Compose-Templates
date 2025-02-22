@@ -6,5 +6,5 @@ respectively: just the ViewModel and ViewModel + Screen Composable.
 
 Tempates can be added in Settings > Editor > File and Code Templates
 
-![settings-templates](readmeres/settings-tempates.png)
+![settings-templates](readmeres/settings-templates.png)
 
